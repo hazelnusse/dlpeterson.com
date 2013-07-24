@@ -1,0 +1,3 @@
+[submodule "themes/pelican-octopress"]
+	path = themes/pelican-octopress
+	url = https://github.com/duilio/pelican-octopress-theme.git
