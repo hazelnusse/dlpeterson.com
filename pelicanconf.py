@@ -9,6 +9,7 @@ SITENAME = u'Dale Lukas Peterson'
 SITESUBTITLE = u'... and some of my thoughts.'
 SITEURL = ''
 DISQUS_SITENAME = 'dlpeterson'
+GOOGLE_CUSTOM_SEARCH = '006558160917687542414:hiq68yatdg0'
 GOOGLE_ANALYTICS = 'UA-42712749-1'
 GOOGLE_ANALYTICS_DOMAIN = 'dlpeterson.com'
 
@@ -41,18 +42,18 @@ SOCIAL_TITLE = 'Contact'
 
 DEFAULT_PAGINATION = 5
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
 STATIC_PATHS = [
     'extra/favicon.ico',
+    'extra/google232cf77a4621a824.html',
     ]
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/google232cf77a4621a824.html': {'path': 'google232cf77a4621a824.html'}
     }
 
-#THEME = 'themes/pelican-octopress'
 THEME = 'themes/plumage'
+PLUGIN_PATH = "plugins"
+PLUGINS = ["latex"]
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
