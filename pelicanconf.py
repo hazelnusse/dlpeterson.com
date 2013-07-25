@@ -9,6 +9,8 @@ SITENAME = u'Dale Lukas Peterson'
 SITESUBTITLE = u'... and some of my thoughts.'
 SITEURL = ''
 DISQUS_SITENAME = 'dlpeterson'
+GOOGLE_ANALYTICS = 'UA-42712749-1'
+GOOGLE_ANALYTICS_DOMAIN = 'dlpeterson.com'
 
 TIMEZONE = 'America/Los_Angeles'
 d = datetime.utcnow()
@@ -35,6 +37,7 @@ SOCIAL = (('github', 'http://github.com/hazelnusse'),
           ('linkedin', 'http://www.linkedin.com/pub/dale-peterson/13/998/a3'),
           ('twitter', 'http://twitter.com/hazelnusse'),
           ('email', 'mailto:hazelnusse@gmail.com'))
+SOCIAL_TITLE = 'Contact'
 
 DEFAULT_PAGINATION = 5
 
