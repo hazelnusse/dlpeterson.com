@@ -1,3 +1,9 @@
 [submodule "themes/pelican-octopress"]
 	path = themes/pelican-octopress
 	url = https://github.com/duilio/pelican-octopress-theme.git
+[submodule "plugins"]
+	path = plugins
+	url = https://github.com/getpelican/pelican-plugins
+[submodule "themes/plumage"]
+	path = themes/plumage
+	url = https://github.com/kdeldycke/plumage
