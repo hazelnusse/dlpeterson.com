@@ -1,5 +1,6 @@
 date: 2013-07-25 03:55
-title: initial-post
+title: Initial post
+category:
 tags: pelican
 
 After reading that the [Pythonic Perambulations](http://jakevdp.github.io) site
