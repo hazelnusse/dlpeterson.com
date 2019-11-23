@@ -16,7 +16,7 @@ unicode](http://www.joelonsoftware.com/articles/Unicode.html), I decided this
 is a hard requirement, so pdftex was out. While both
 [XeTeX](http://xetex.sourceforge.net/) and [LuaTeX](http://www.luatex.org/)
 projects have addressed this issue, it seems like XeTeX is more mainstream.
-Finally, for the actually build process, I used things like
+Finally, for the build process, I used things like
 [Vim-LaTeX](http://vim-latex.sourceforge.net/) or
 [AucTeX](http://www.gnu.org/software/auctex/) (or sometimes a manually written
 `Makefile`). The [latexmk](http://www.ctan.org/pkg/latexmk/) package (not to be
