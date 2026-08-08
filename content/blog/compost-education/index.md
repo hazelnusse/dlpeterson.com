@@ -1,9 +1,10 @@
----
-title: "Compost Education"
-date: 2019-11-23T19:28:47-08:00
-tags:
-- yard
----
++++
+title = "Compost Education"
+date = 2019-11-23T19:28:47-08:00
+
+[taxonomies]
+tags = ["yard"]
++++
 
 Cassandra and I went to a composting and vermicomposting class at [Martial
 Cottle

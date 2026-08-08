@@ -1,10 +1,10 @@
----
-title: "LaTeX workflow"
-date: 2013-09-09T00:25:00-08:00
-draft: false
-tags:
-- latex
----
++++
+title = "LaTeX workflow"
+date = 2013-09-09T00:25:00-08:00
+
+[taxonomies]
+tags = ["latex"]
++++
 
 In the last several years, the common workflow for using LaTeX has changed
 since I first learned it. In particular, bibtex has been to a large degree
@@ -32,7 +32,7 @@ set up is latexmk. latexmk has a few options that are worth configuring (`man
 latexmk` will give you all the gory details). I put the following in my
 `~/.config/latexmk/latexmkrc`:
 
-{{< highlight bash "linenos=table">}}
+```bash
 # Choose xelatex as the default builder of pdfs, don't stop for errors, use synctex
 $pdflatex = 'xelatex -interaction=nonstopmode -synctex=1 --shell-escape %O %S';
 # .bbl files assumed to be regeneratable, safe as long as the .bib file is available
@@ -43,11 +43,11 @@ $biber = 'biber --debug %O %S';
 $pdf_previewer = 'evince %O %S';
 # Extra file extensions to clean when latexmk -c or latexmk -C is used
 $clean_ext = '%R.run.xml %R.synctex.gz';
-{{< / highlight >}}
+```
 
 Open up your favorite editor and create `example.tex` with the following contents
 
-{{< highlight latex "linenos=table" >}}
+```latex
 \documentclass{article}
 \usepackage[backend=biber]{biblatex}
 \usepackage[pdfencoding=auto]{hyperref}
@@ -58,11 +58,11 @@ Open up your favorite editor and create `example.tex` with the following content
 Numbering should start at zero~\cite{EWD831}.
 \printbibliography
 \end{document}
-{{< / highlight >}}
+```
 
 and `references.bib` with
 
-{{< highlight latex "linenos=table" >}}
+```latex
 @unpublished{EWD831,
   author = {Dijkstra, Edsger W.},
   pages = {3},
@@ -70,13 +70,13 @@ and `references.bib` with
   url = {http://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF},
   year = {1982}
 }
-{{< / highlight >}}
+```
 
 Now to have latexmk build `example.tex` into the pdf enter this into your terminal
 
-{{< highlight bash >}}
+```bash
 latexmk -pvc -pdf ./example.tex
-{{< / highlight >}}
+```
 
 This should immediately build your pdf and open it up using `evince`. In
 another terminal, start editing the .tex file or the .bib file. As soon as you

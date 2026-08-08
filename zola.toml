@@ -1,0 +1,24 @@
+base_url = "https://dlpeterson.com"
+title = "Luke Peterson"
+description = "Luke Peterson's blog and personal website"
+compile_sass = false
+build_search_index = false
+
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+
+taxonomies = [
+  { name = "tags", feed = true },
+]
+
+[markdown.highlighting]
+theme = "github-dark"
+
+[extra]
+author = "Luke Peterson"
+copyright = "Luke Peterson, <a href=\"https://creativecommons.org/licenses/by/4.0/\">some rights reserved</a>."
+
+[extra.social]
+github = "hazelnusse"
+linkedin = "hazelnusse"
+email = "hazelnusse@gmail.com"

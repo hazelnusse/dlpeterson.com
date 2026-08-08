@@ -1,0 +1,31 @@
+@media print {
+  @page {
+    margin: 0.75in;
+  }
+
+  html, body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  header.site-header,
+  footer.site-footer,
+  .post-meta a.tag {
+    display: none;
+  }
+
+  .wrap {
+    max-width: none;
+    padding: 0;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .resume-doc section,
+  .resume-doc h2 {
+    break-inside: avoid;
+  }
+}

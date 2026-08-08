@@ -1,34 +1,15 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "zola build"
 
-[context.production.environment]
-HUGO_VERSION = "0.59.1"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
-GIT_LFS_ENABLED = "true"
-
-[context.split1]
-command = "hugo --gc --minify --enableGitInfo"
-
-[context.split1.environment]
-HUGO_VERSION = "0.59.1"
-HUGO_ENV = "production"
+[build.environment]
+ZOLA_VERSION = "0.22.1"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.59.1"
+command = "zola build --base-url $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.59.1"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
+command = "zola build --base-url $DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "/*"

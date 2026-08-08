@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+<meta name="description" content="{{ config.description }}">
+<link rel="stylesheet" href="{{ get_url(path='css/style.css') }}">
+{% block extra_head %}{% endblock extra_head %}
+{% if config.generate_feeds %}
+<link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml') }}">
+{% endif %}
+<link rel="canonical" href="{{ current_url | default(value=config.base_url) }}">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="{{ get_url(path='@/_index.md') }}">{{ config.title }}</a>
+    <nav>
+      <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
+      <a href="{{ get_url(path='@/resume.md') }}">Resume</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{% block content %}{% endblock content %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>{{ config.extra.copyright | safe }}</p>
+    <p class="social">
+      {% if config.extra.social.github %}<a href="https://github.com/{{ config.extra.social.github }}">GitHub</a>{% endif %}
+      {% if config.extra.social.linkedin %}<a href="https://www.linkedin.com/in/{{ config.extra.social.linkedin }}/">LinkedIn</a>{% endif %}
+      {% if config.extra.social.email %}<a href="mailto:{{ config.extra.social.email }}">Email</a>{% endif %}
+      <a href="{{ get_url(path='atom.xml') }}">RSS</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
