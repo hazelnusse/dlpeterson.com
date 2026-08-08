@@ -1,11 +1,13 @@
 @media print {
   @page {
-    margin: 0.75in;
+    margin: 0.5in;
   }
 
   html, body {
     background: #ffffff;
     color: #000000;
+    font-size: 9.5pt;
+    line-height: 1.3;
   }
 
   header.site-header,
@@ -24,8 +26,42 @@
     text-decoration: none;
   }
 
-  .resume-doc section,
+  a[href]:after {
+    content: none;
+  }
+
+  .resume-doc {
+    padding: 0;
+    max-width: none;
+    font-size: 9.5pt;
+  }
+
+  .resume-header h1 {
+    font-size: 1.6em;
+    margin: 0 0 0.1em;
+  }
+
   .resume-doc h2 {
+    margin: 0.7em 0 0.35em;
+    font-size: 1.05em;
+    break-after: avoid;
+  }
+
+  .entry-list {
+    margin-bottom: 0.2em;
+  }
+
+  .entry {
+    margin-bottom: 0.3em;
     break-inside: avoid;
+  }
+
+  .entry-dates {
+    flex: 0 0 7em;
+    font-size: 0.85em;
+  }
+
+  .entry-desc {
+    margin-top: 0.1em;
   }
 }

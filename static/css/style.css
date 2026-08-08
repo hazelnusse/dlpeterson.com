@@ -182,19 +182,57 @@ footer.site-footer .social a:last-child {
 
 .resume-doc {
   padding: 2.5rem 1.25rem;
+  max-width: 46rem;
+  font-size: 0.95rem;
 }
 
-.resume-doc h1 {
+.resume-header h1 {
   margin-bottom: 0.25rem;
 }
 
-.resume-doc h1 + p {
+.resume-header .contact {
   color: var(--muted);
   margin-top: 0;
+  font-size: 0.9rem;
 }
 
 .resume-doc h2 {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.25rem;
-  margin-top: 2rem;
+  padding-bottom: 0.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+}
+
+.entry-list {
+  margin-bottom: 0.5rem;
+}
+
+.entry {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.entry-dates {
+  flex: 0 0 8em;
+  color: var(--muted);
+  font-size: 0.82em;
+  white-space: nowrap;
+  padding-top: 0.15em;
+}
+
+.entry-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.entry-desc {
+  margin: 0.15rem 0 0;
+  color: var(--fg);
 }
