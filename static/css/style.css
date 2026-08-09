@@ -167,16 +167,26 @@ footer.site-footer {
 }
 
 footer.site-footer .social {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 footer.site-footer .social a {
   color: var(--muted);
-  margin-right: 1rem;
+  display: inline-flex;
 }
 
-footer.site-footer .social a:last-child {
-  margin-right: 0;
+footer.site-footer .social a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer.site-footer .social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .resume-back {

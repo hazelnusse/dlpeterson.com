@@ -33,10 +33,16 @@
   <div class="wrap">
     <p>{{ config.extra.copyright | safe }}</p>
     <p class="social">
-      {% if config.extra.social.github %}<a href="https://github.com/{{ config.extra.social.github }}">GitHub</a>{% endif %}
-      {% if config.extra.social.linkedin %}<a href="https://www.linkedin.com/in/{{ config.extra.social.linkedin }}/">LinkedIn</a>{% endif %}
-      {% if config.extra.social.email %}<a href="mailto:{{ config.extra.social.email }}">Email</a>{% endif %}
-      <a href="{{ get_url(path='atom.xml') }}">Atom feed</a>
+      {% if config.extra.social.github %}
+      <a href="https://github.com/{{ config.extra.social.github }}" title="GitHub" aria-label="GitHub">{{ load_data(path="icons/github.svg", format="plain") | safe }}</a>
+      {% endif %}
+      {% if config.extra.social.linkedin %}
+      <a href="https://www.linkedin.com/in/{{ config.extra.social.linkedin }}/" title="LinkedIn" aria-label="LinkedIn">{{ load_data(path="icons/linkedin.svg", format="plain") | safe }}</a>
+      {% endif %}
+      {% if config.extra.social.email %}
+      <a href="mailto:{{ config.extra.social.email }}" title="Email" aria-label="Email">{{ load_data(path="icons/email.svg", format="plain") | safe }}</a>
+      {% endif %}
+      <a href="{{ get_url(path='atom.xml') }}" title="Atom feed" aria-label="Atom feed">{{ load_data(path="icons/atom.svg", format="plain") | safe }}</a>
     </p>
   </div>
 </footer>
