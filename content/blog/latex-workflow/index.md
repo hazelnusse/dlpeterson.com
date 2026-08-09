@@ -21,7 +21,7 @@ Finally, for the build process, I used things like
 [AucTeX](http://www.gnu.org/software/auctex/) (or sometimes a manually written
 `Makefile`). The [latexmk](http://www.ctan.org/pkg/latexmk/) package (not to be
 confused with the [LaTeX-Mk](http://latex-mk.sourceforge.net/) package, which
-hasn't seen an update since 2010-12-28 and is *not* part of the MikTeX
+hasn't seen an update since 2010-12-28 and is _not_ part of the MikTeX
 distribution) now does an excellent job of managing the building of your pdf.
 This post outlines my new work flow that takes advantage of the latest tools in
 the TeX/LaTeX world.

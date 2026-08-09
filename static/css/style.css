@@ -31,7 +31,9 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   line-height: 1.6;
 }
 
@@ -84,7 +86,9 @@ main {
   min-height: 60vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.25;
 }
 

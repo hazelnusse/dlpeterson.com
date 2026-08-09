@@ -1,50 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="{{ get_url(path='favicon.svg') }}" type="image/svg+xml">
-<link rel="icon" href="{{ get_url(path='favicon.ico') }}" sizes="any">
-<link rel="apple-touch-icon" href="{{ get_url(path='apple-touch-icon.png') }}">
-<title>{% block title %}{{ config.title }}{% endblock title %}</title>
-<meta name="description" content="{{ config.description }}">
-<link rel="stylesheet" href="{{ get_url(path='css/style.css') }}">
-<link rel="stylesheet" href="{{ get_url(path='css/print.css') }}" media="print">
-{% block extra_head %}{% endblock extra_head %}
-{% if config.generate_feeds %}
-<link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml') }}">
-{% endif %}
-{% if current_url %}<link rel="canonical" href="{{ current_url }}">{% endif %}
-</head>
-<body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="site-title" href="{{ get_url(path='@/_index.md') }}">{{ config.title }}</a>
-    <nav>
-      <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
-      <a href="{{ get_url(path='@/resume.md') }}">Resume</a>
-    </nav>
-  </div>
-</header>
-<main class="wrap">
-{% block content %}{% endblock content %}
-</main>
-<footer class="site-footer">
-  <div class="wrap">
-    <p>{{ config.extra.copyright | safe }}</p>
-    <p class="social">
-      {% if config.extra.social.github %}
-      <a href="https://github.com/{{ config.extra.social.github }}" title="GitHub" aria-label="GitHub">{{ load_data(path="icons/github.svg", format="plain") | safe }}</a>
-      {% endif %}
-      {% if config.extra.social.linkedin %}
-      <a href="https://www.linkedin.com/in/{{ config.extra.social.linkedin }}/" title="LinkedIn" aria-label="LinkedIn">{{ load_data(path="icons/linkedin.svg", format="plain") | safe }}</a>
-      {% endif %}
-      {% if config.extra.social.email %}
-      <a href="mailto:{{ config.extra.social.email }}" title="Email" aria-label="Email">{{ load_data(path="icons/email.svg", format="plain") | safe }}</a>
-      {% endif %}
-      <a href="{{ get_url(path='atom.xml') }}" title="Atom feed" aria-label="Atom feed">{{ load_data(path="icons/atom.svg", format="plain") | safe }}</a>
-    </p>
-  </div>
-</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="{{ get_url(path='favicon.svg') }}"
+      type="image/svg+xml"
+    />
+    <link rel="icon" href="{{ get_url(path='favicon.ico') }}" sizes="any" />
+    <link
+      rel="apple-touch-icon"
+      href="{{ get_url(path='apple-touch-icon.png') }}"
+    />
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta name="description" content="{{ config.description }}" />
+    <link rel="stylesheet" href="{{ get_url(path='css/style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ get_url(path='css/print.css') }}"
+      media="print"
+    />
+    {% block extra_head %}{% endblock extra_head %}
+    {% if config.generate_feeds %}
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="{{ config.title }}"
+        href="{{ get_url(path='atom.xml') }}"
+      />
+    {% endif %}
+    {% if current_url %}
+      <link rel="canonical" href="{{ current_url }}" />
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="{{ get_url(path='@/_index.md') }}"
+          >{{ config.title }}</a
+        >
+        <nav>
+          <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
+          <a href="{{ get_url(path='@/resume.md') }}">Resume</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">{% block content %}{% endblock content %}</main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>{{ config.extra.copyright | safe }}</p>
+        <p class="social">
+          {% if config.extra.social.github %}
+            <a
+              href="https://github.com/{{ config.extra.social.github }}"
+              title="GitHub"
+              aria-label="GitHub"
+              >{{ load_data(path="icons/github.svg", format="plain") | safe }}</a
+            >
+          {% endif %}
+          {% if config.extra.social.linkedin %}
+            <a
+              href="https://www.linkedin.com/in/{{ config.extra.social.linkedin }}/"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              >{{ load_data(path="icons/linkedin.svg", format="plain") | safe }}</a
+            >
+          {% endif %}
+          {% if config.extra.social.email %}
+            <a
+              href="mailto:{{ config.extra.social.email }}"
+              title="Email"
+              aria-label="Email"
+              >{{ load_data(path="icons/email.svg", format="plain") | safe }}</a
+            >
+          {% endif %}
+          <a
+            href="{{ get_url(path='atom.xml') }}"
+            title="Atom feed"
+            aria-label="Atom feed"
+            >{{ load_data(path="icons/atom.svg", format="plain") | safe }}</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

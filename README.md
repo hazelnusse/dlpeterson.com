@@ -81,10 +81,10 @@ in `netlify.toml`:
 - **Zola version**: pinned via the `ZOLA_VERSION` build environment
   variable, using Netlify's `binrc` mechanism to fetch that exact tagged
   Zola binary — no Nix involved in the Netlify build image itself. When
-  bumping the Zola version, update `ZOLA_VERSION` in `netlify.toml` *and*
+  bumping the Zola version, update `ZOLA_VERSION` in `netlify.toml` _and_
   run `nix flake update` locally so the devshell and Netlify stay in sync.
 - **Deploy previews / branch deploys**: build with `--base-url
-  $DEPLOY_PRIME_URL` so links resolve against the preview URL instead of
+$DEPLOY_PRIME_URL` so links resolve against the preview URL instead of
   the production domain.
 - **Custom domain**: `dlpeterson.com` (and `www.dlpeterson.com`, which
   redirects to the apex) is configured directly in the Netlify dashboard

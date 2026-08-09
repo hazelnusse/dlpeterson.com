@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block title %}404 — Page Not Found | {{ config.title }}{% endblock title %}
 {% block content %}
-<h1>404</h1>
-<p>Page not found. <a href="{{ get_url(path='@/_index.md') }}">Go home</a>.</p>
+  <h1>404</h1>
+  <p>
+    Page not found. <a href="{{ get_url(path='@/_index.md') }}">Go home</a>.
+  </p>
 {% endblock content %}

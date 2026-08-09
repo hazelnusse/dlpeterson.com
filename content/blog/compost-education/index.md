@@ -31,7 +31,7 @@ We learned a few things:
 2. [BioBags](http://biobagusa.com/products/retail-products/food-scrap-products-retail/)
    are not practically compostable; we have discovered this the hard way and
    have a bunch of small pieces of thin green plastic spread throughout our
-   back yard.  One of the instructors of the course indicated she saw these
+   back yard. One of the instructors of the course indicated she saw these
    bags all over the place even in industrial hot composts and they tend to not
    break down. I don't know what ASTM D6400 defines to be "compostable", but
    whatever it is, it doesn't seem to translate to the real world.
