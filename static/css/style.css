@@ -98,8 +98,7 @@ h1, h2, h3 {
   border-bottom: none;
 }
 
-.post-meta,
-.post-header .post-meta {
+.post-meta {
   color: var(--muted);
   font-size: 0.9rem;
   margin: 0.15rem 0 0.75rem;

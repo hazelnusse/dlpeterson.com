@@ -7,8 +7,10 @@
 <link rel="icon" href="{{ get_url(path='favicon.ico') }}" sizes="any">
 <link rel="apple-touch-icon" href="{{ get_url(path='apple-touch-icon.png') }}">
 <title>{{ page.title }} | {{ config.title }}</title>
+<meta name="description" content="{{ config.description }}">
 <link rel="stylesheet" href="{{ get_url(path='css/style.css') }}">
 <link rel="stylesheet" href="{{ get_url(path='css/print.css') }}" media="print">
+<link rel="canonical" href="{{ current_url | default(value=config.base_url) }}">
 </head>
 <body class="resume">
 <main class="wrap resume-doc">
