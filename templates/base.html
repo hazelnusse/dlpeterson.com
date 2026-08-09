@@ -14,7 +14,7 @@
 {% if config.generate_feeds %}
 <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml') }}">
 {% endif %}
-<link rel="canonical" href="{{ current_url | default(value=config.base_url) }}">
+{% if current_url %}<link rel="canonical" href="{{ current_url }}">{% endif %}
 </head>
 <body>
 <header class="site-header">
