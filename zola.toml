@@ -3,6 +3,7 @@ title = "Luke Peterson"
 description = "Luke Peterson's blog and personal website"
 compile_sass = false
 build_search_index = false
+exclude_paginated_pages_in_sitemap = "all"
 
 generate_feeds = true
 feed_filenames = ["atom.xml"]
