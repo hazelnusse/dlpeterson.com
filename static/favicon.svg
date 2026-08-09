@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #2a5fd9; }
+    .fg { fill: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #7aa2ff; }
+      .fg { fill: #16181d; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32" rx="7"/>
+  <text class="fg" x="16" y="22" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">LP</text>
+</svg>
