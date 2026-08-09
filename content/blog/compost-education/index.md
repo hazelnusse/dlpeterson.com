@@ -8,15 +8,15 @@ tags = ["yard"]
 
 Cassandra and I went to a composting and vermicomposting class at [Martial
 Cottle
-Park](https://www.sccgov.org/sites/parks/parkfinder/pages/martialcottle.aspx).
+Park](https://parks.santaclaracounty.gov/locations/martial-cottle-park).
 The park is 287 acres, and is about 7km from our house and is really beautiful.
 It was gifted in 2003 by Walter Cottle Lester to the State and County for
 development of a public park that informs and educates the public about the
 agricultural heritage of the Santa Clara Valley. The class was free and we got
 to take home several bags of organic compost; San Jose residents get a [pretty
-good deal](https://www.sanjoseca.gov/index.aspx?NID=2191) on composters or worm
+good deal](https://www.sanjoseca.gov/your-government/departments-offices/environmental-services/homes-green-tips-resources/gardening-composting/home-composting) on composters or worm
 bins through the city of San Jose. We already have a [Greenes cedar
-composter](https://greenesfence.com/collections/cedar-composter/products/cedar-wood-composter-rccomp)
+composter](https://greenesfence.com/products/cedar-wood-composters-36in-48in)
 to which we've been adding all our kitchen scraps, weeds, and garden trimmings,
 but we'll probably be getting a worm bin and start keeping worms. We are in the
 early stages of re-doing our yards with native plants, fruit trees, and raised
