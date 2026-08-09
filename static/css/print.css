@@ -12,6 +12,7 @@
 
   header.site-header,
   footer.site-footer,
+  .resume-back,
   .post-meta a.tag {
     display: none;
   }

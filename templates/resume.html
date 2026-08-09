@@ -13,6 +13,7 @@
 <link rel="canonical" href="{{ current_url | default(value=config.base_url) }}">
 </head>
 <body class="resume">
+<p class="resume-back wrap"><a href="{{ get_url(path='@/_index.md') }}">← {{ config.title }}</a></p>
 <main class="wrap resume-doc">
 {{ page.content | safe }}
 </main>
